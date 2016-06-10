@@ -1,0 +1,282 @@
+2016-05-27 14:43:14 [scrapy] INFO: Scrapy 1.0.3 started (bot: weibospider)
+2016-05-27 14:43:14 [scrapy] INFO: Optional features available: ssl, http11
+2016-05-27 14:43:14 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'weibospider.spiders', 'FEED_URI': 'file:///home/hadoop_user/scrapy-weibospider-mysql/items/weibospider/cauc_warningman_weibo/46c9856023d611e6b55f000c29c4bf4d.jl', 'SPIDER_MODULES': ['weibospider.spiders'], 'RETRY_HTTP_CODES': [400, 403, 408, 500, 502, 503, 504], 'BOT_NAME': 'weibospider', 'LOG_FILE': 'logs/weibospider/cauc_warningman_weibo/46c9856023d611e6b55f000c29c4bf4d.log', 'DOWNLOAD_DELAY': 10}
+2016-05-27 14:43:14 [scrapy] INFO: Enabled extensions: CloseSpider, FeedExporter, TelnetConsole, LogStats, CoreStats, SpiderState
+2016-05-27 14:43:14 [scrapy] INFO: Enabled downloader middlewares: RotateUserAgent, HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, MetaRefreshMiddleware, HttpCompressionMiddleware, RedirectMiddleware, CookiesMiddleware, ChunkedTransferMiddleware, DownloaderStats
+2016-05-27 14:43:14 [scrapy] INFO: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
+2016-05-27 14:43:14 [scrapy] INFO: Enabled item pipelines: WeibospiderPipeline, UserImagesPipeline
+2016-05-27 14:43:14 [scrapy] INFO: Spider opened
+2016-05-27 14:43:14 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-05-27 14:43:14 [scrapy] DEBUG: Telnet console listening on 127.0.0.1:6023
+2016-05-27 14:43:14 [scrapy] DEBUG: Redirecting (302) to <GET https://passport.weibo.com/visitor/visitor?entry=miniblog&a=enter&url=http%3A%2F%2Fweibo.com%2F&domain=.weibo.com&ua=php-sso_sdk_client-0.6.14&_rand=1464331461.8708> from <GET http://weibo.com>
+2016-05-27 14:43:25 [scrapy] DEBUG: Crawled (200) <GET https://passport.weibo.com/visitor/visitor?entry=miniblog&a=enter&url=http%3A%2F%2Fweibo.com%2F&domain=.weibo.com&ua=php-sso_sdk_client-0.6.14&_rand=1464331461.8708> (referer: None)
+2016-05-27 14:43:25 [datamysql] INFO: mysql_connectinon success!!
+2016-05-27 14:43:25 [datamysql] INFO: select_operation success!!
+2016-05-27 14:43:25 [weibospider.spiders.cauc_warningman_weibo] INFO: this is the unsearched user_id:2728266823
+2016-05-27 14:43:25 [weibospider.spiders.cauc_warningman_weibo] INFO: this is the unsearched user_id:5589322664
+2016-05-27 14:43:25 [datamysql] INFO: select_operation success!!
+2016-05-27 14:43:25 [datamysql] INFO: update_operation success!!
+2016-05-27 14:43:25 [datamysql] INFO: mysql_connection close!!
+2016-05-27 14:43:36 [scrapy] DEBUG: Redirecting (302) to <GET http://weibo.com/donggebyr?is_ori=1&is_forward=1&is_text=1&is_pic=1&key_word=&start_time=2015-05-01&end_time=2016-05-27&is_search=1&is_searchadv=1&count=15&pagebar=1&_k=&pre_page=1&end_id=&_rnd=&_t=0&max_id=&page=1&uid=2728266823> from <GET http://weibo.com/2728266823?is_ori=1&is_forward=1&is_text=1&is_pic=1&key_word=&start_time=2015-05-01&end_time=2016-05-27&is_search=1&is_searchadv=1&count=15&pagebar=1&_k=&pre_page=1&end_id=&_rnd=&_t=0&max_id=&page=1&uid=2728266823>
+2016-05-27 14:43:48 [scrapy] DEBUG: Redirecting (302) to <GET http://weibo.com/u/5589322664?is_ori=1&is_forward=1&is_text=1&is_pic=1&key_word=&start_time=2015-05-01&end_time=2016-05-27&is_search=1&is_searchadv=1&count=15&pagebar=1&_k=&pre_page=1&end_id=&_rnd=&_t=0&max_id=&page=1&uid=5589322664> from <GET http://weibo.com/5589322664?is_ori=1&is_forward=1&is_text=1&is_pic=1&key_word=&start_time=2015-05-01&end_time=2016-05-27&is_search=1&is_searchadv=1&count=15&pagebar=1&_k=&pre_page=1&end_id=&_rnd=&_t=0&max_id=&page=1&uid=5589322664>
+2016-05-27 14:44:04 [scrapy] DEBUG: Crawled (200) <GET http://weibo.com/donggebyr?is_ori=1&is_forward=1&is_text=1&is_pic=1&key_word=&start_time=2015-05-01&end_time=2016-05-27&is_search=1&is_searchadv=1&count=15&pagebar=1&_k=&pre_page=1&end_id=&_rnd=&_t=0&max_id=&page=1&uid=2728266823> (referer: https://passport.weibo.com/visitor/visitor?entry=miniblog&a=enter&url=http%3A%2F%2Fweibo.com%2F&domain=.weibo.com&ua=php-sso_sdk_client-0.6.14&_rand=1464331461.8708)
+2016-05-27 14:44:05 [analyzer] WARNING: no matched html with condition: script:contains("W_pages")!!
+2016-05-27 14:44:05 [weibospider.spiders.cauc_warningman_weibo] INFO: the total_pages is: 1
+2016-05-27 14:44:05 [scrapy] DEBUG: Filtered duplicate request: <GET http://weibo.com/2728266823?is_ori=1&is_forward=1&is_text=1&is_pic=1&key_word=&start_time=2015-05-01&end_time=2016-05-27&is_search=1&is_searchadv=1&count=15&pagebar=1&_k=&pre_page=1&end_id=&_rnd=&_t=0&max_id=&page=1&uid=2728266823> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2016-05-27 14:44:14 [scrapy] INFO: Crawled 2 pages (at 2 pages/min), scraped 0 items (at 0 items/min)
+2016-05-27 14:44:18 [scrapy] DEBUG: Crawled (200) <GET http://weibo.com/u/5589322664?is_ori=1&is_forward=1&is_text=1&is_pic=1&key_word=&start_time=2015-05-01&end_time=2016-05-27&is_search=1&is_searchadv=1&count=15&pagebar=1&_k=&pre_page=1&end_id=&_rnd=&_t=0&max_id=&page=1&uid=5589322664> (referer: https://passport.weibo.com/visitor/visitor?entry=miniblog&a=enter&url=http%3A%2F%2Fweibo.com%2F&domain=.weibo.com&ua=php-sso_sdk_client-0.6.14&_rand=1464331461.8708)
+2016-05-27 14:44:18 [analyzer] WARNING: no matched html with condition: script:contains("W_pages")!!
+2016-05-27 14:44:18 [weibospider.spiders.cauc_warningman_weibo] INFO: the total_pages is: 1
+2016-05-27 14:44:30 [scrapy] DEBUG: Redirecting (302) to <GET http://weibo.com/donggebyr?is_ori=1&is_forward=1&is_text=1&is_pic=1&key_word=&start_time=2015-05-01&end_time=2016-05-27&is_search=1&is_searchadv=1&count=15&pagebar=1&_k=&pre_page=0&end_id=&_rnd=&_t=0&max_id=&page=1&uid=2728266823> from <GET http://weibo.com/2728266823?is_ori=1&is_forward=1&is_text=1&is_pic=1&key_word=&start_time=2015-05-01&end_time=2016-05-27&is_search=1&is_searchadv=1&count=15&pagebar=1&_k=&pre_page=0&end_id=&_rnd=&_t=0&max_id=&page=1&uid=2728266823>
+2016-05-27 14:44:45 [scrapy] DEBUG: Redirecting (302) to <GET http://weibo.com/donggebyr?is_ori=1&is_forward=1&is_text=1&is_pic=1&key_word=&start_time=2015-05-01&end_time=2016-05-27&is_search=1&is_searchadv=1&count=15&pagebar=1&_k=&pre_page=2&end_id=&_rnd=&_t=0&max_id=&page=2&uid=2728266823> from <GET http://weibo.com/2728266823?is_ori=1&is_forward=1&is_text=1&is_pic=1&key_word=&start_time=2015-05-01&end_time=2016-05-27&is_search=1&is_searchadv=1&count=15&pagebar=1&_k=&pre_page=2&end_id=&_rnd=&_t=0&max_id=&page=2&uid=2728266823>
+2016-05-27 14:44:59 [scrapy] DEBUG: Redirecting (302) to <GET http://weibo.com/donggebyr?is_ori=1&is_forward=1&is_text=1&is_pic=1&key_word=&start_time=2015-05-01&end_time=2016-05-27&is_search=1&is_searchadv=1&count=15&pagebar=0&_k=&pre_page=2&end_id=&_rnd=&_t=0&max_id=&page=2&uid=2728266823> from <GET http://weibo.com/2728266823?is_ori=1&is_forward=1&is_text=1&is_pic=1&key_word=&start_time=2015-05-01&end_time=2016-05-27&is_search=1&is_searchadv=1&count=15&pagebar=0&_k=&pre_page=2&end_id=&_rnd=&_t=0&max_id=&page=2&uid=2728266823>
+2016-05-27 14:45:13 [scrapy] DEBUG: Redirecting (302) to <GET http://weibo.com/donggebyr?is_ori=1&is_forward=1&is_text=1&is_pic=1&key_word=&start_time=2015-05-01&end_time=2016-05-27&is_search=1&is_searchadv=1&count=15&pagebar=1&_k=&pre_page=1&end_id=&_rnd=&_t=0&max_id=&page=2&uid=2728266823> from <GET http://weibo.com/2728266823?is_ori=1&is_forward=1&is_text=1&is_pic=1&key_word=&start_time=2015-05-01&end_time=2016-05-27&is_search=1&is_searchadv=1&count=15&pagebar=1&_k=&pre_page=1&end_id=&_rnd=&_t=0&max_id=&page=2&uid=2728266823>
+2016-05-27 14:45:14 [scrapy] INFO: Crawled 3 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2016-05-27 14:45:24 [scrapy] DEBUG: Redirecting (302) to <GET http://weibo.com/donggebyr?is_ori=1&is_forward=1&is_text=1&is_pic=1&key_word=&start_time=2015-05-01&end_time=2016-05-27&is_search=1&is_searchadv=1&count=15&pagebar=0&_k=&pre_page=1&end_id=&_rnd=&_t=0&max_id=&page=1&uid=2728266823> from <GET http://weibo.com/2728266823?is_ori=1&is_forward=1&is_text=1&is_pic=1&key_word=&start_time=2015-05-01&end_time=2016-05-27&is_search=1&is_searchadv=1&count=15&pagebar=0&_k=&pre_page=1&end_id=&_rnd=&_t=0&max_id=&page=1&uid=2728266823>
+2016-05-27 14:45:37 [scrapy] DEBUG: Redirecting (302) to <GET http://weibo.com/u/5589322664?is_ori=1&is_forward=1&is_text=1&is_pic=1&key_word=&start_time=2015-05-01&end_time=2016-05-27&is_search=1&is_searchadv=1&count=15&pagebar=0&_k=&pre_page=1&end_id=&_rnd=&_t=0&max_id=&page=1&uid=5589322664> from <GET http://weibo.com/5589322664?is_ori=1&is_forward=1&is_text=1&is_pic=1&key_word=&start_time=2015-05-01&end_time=2016-05-27&is_search=1&is_searchadv=1&count=15&pagebar=0&_k=&pre_page=1&end_id=&_rnd=&_t=0&max_id=&page=1&uid=5589322664>
+2016-05-27 14:45:51 [scrapy] DEBUG: Redirecting (302) to <GET http://weibo.com/u/5589322664?is_ori=1&is_forward=1&is_text=1&is_pic=1&key_word=&start_time=2015-05-01&end_time=2016-05-27&is_search=1&is_searchadv=1&count=15&pagebar=1&_k=&pre_page=0&end_id=&_rnd=&_t=0&max_id=&page=1&uid=5589322664> from <GET http://weibo.com/5589322664?is_ori=1&is_forward=1&is_text=1&is_pic=1&key_word=&start_time=2015-05-01&end_time=2016-05-27&is_search=1&is_searchadv=1&count=15&pagebar=1&_k=&pre_page=0&end_id=&_rnd=&_t=0&max_id=&page=1&uid=5589322664>
+2016-05-27 14:46:03 [scrapy] DEBUG: Redirecting (302) to <GET http://weibo.com/u/5589322664?is_ori=1&is_forward=1&is_text=1&is_pic=1&key_word=&start_time=2015-05-01&end_time=2016-05-27&is_search=1&is_searchadv=1&count=15&pagebar=1&_k=&pre_page=2&end_id=&_rnd=&_t=0&max_id=&page=2&uid=5589322664> from <GET http://weibo.com/5589322664?is_ori=1&is_forward=1&is_text=1&is_pic=1&key_word=&start_time=2015-05-01&end_time=2016-05-27&is_search=1&is_searchadv=1&count=15&pagebar=1&_k=&pre_page=2&end_id=&_rnd=&_t=0&max_id=&page=2&uid=5589322664>
+2016-05-27 14:46:14 [scrapy] INFO: Crawled 3 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-05-27 14:46:17 [scrapy] DEBUG: Redirecting (302) to <GET http://weibo.com/u/5589322664?is_ori=1&is_forward=1&is_text=1&is_pic=1&key_word=&start_time=2015-05-01&end_time=2016-05-27&is_search=1&is_searchadv=1&count=15&pagebar=0&_k=&pre_page=2&end_id=&_rnd=&_t=0&max_id=&page=2&uid=5589322664> from <GET http://weibo.com/5589322664?is_ori=1&is_forward=1&is_text=1&is_pic=1&key_word=&start_time=2015-05-01&end_time=2016-05-27&is_search=1&is_searchadv=1&count=15&pagebar=0&_k=&pre_page=2&end_id=&_rnd=&_t=0&max_id=&page=2&uid=5589322664>
+2016-05-27 14:46:20 [scrapy] DEBUG: Redirecting (302) to <GET http://weibo.com/u/5589322664?is_ori=1&is_forward=1&is_text=1&is_pic=1&key_word=&start_time=2015-05-01&end_time=2016-05-27&is_search=1&is_searchadv=1&count=15&pagebar=1&_k=&pre_page=1&end_id=&_rnd=&_t=0&max_id=&page=2&uid=5589322664> from <GET http://weibo.com/5589322664?is_ori=1&is_forward=1&is_text=1&is_pic=1&key_word=&start_time=2015-05-01&end_time=2016-05-27&is_search=1&is_searchadv=1&count=15&pagebar=1&_k=&pre_page=1&end_id=&_rnd=&_t=0&max_id=&page=2&uid=5589322664>
+2016-05-27 14:46:35 [scrapy] DEBUG: Crawled (200) <GET http://weibo.com/donggebyr?is_ori=1&is_forward=1&is_text=1&is_pic=1&key_word=&start_time=2015-05-01&end_time=2016-05-27&is_search=1&is_searchadv=1&count=15&pagebar=1&_k=&pre_page=0&end_id=&_rnd=&_t=0&max_id=&page=1&uid=2728266823> (referer: http://weibo.com/donggebyr?is_ori=1&is_forward=1&is_text=1&is_pic=1&key_word=&start_time=2015-05-01&end_time=2016-05-27&is_search=1&is_searchadv=1&count=15&pagebar=1&_k=&pre_page=1&end_id=&_rnd=&_t=0&max_id=&page=1&uid=2728266823)
+2016-05-27 14:46:36 [scrapy] WARNING: Dropped: Item contains no images
+{'comment_nums': [0, 0, 0, '1', 0, 0, 0, 0, '3', 0, '2', '5', 0, 0, 0],
+ 'content': [u'\u611f\u52a8[\u6cea]',
+             '\xe5\xbe\x80\xe4\xba\x8b\xe6\xb7\xa1\xe5\xa6\x82\xe7\x83\x9f\xef\xbc\x8c\xe9\x9a\x8f\xe6\xb3\xa2\xe9\x83\xbd\xe9\xa3\x98\xe6\x95\xa3\xef\xbc\x8c\xe6\xb8\xba\xe6\xb8\xba\xe4\xb8\x8d\xe5\x8f\xaf\xe8\xa7\x81\xef\xbc\x8c\xe6\x80\x85\xe6\x80\x85\xe6\x9d\xa5\xe6\x80\x80\xe5\xbf\xb5\xe6\x88\x91\xe6\xad\xa3\xe5\x9c\xa8\xe4\xbd\xbf\xe7\x94\xa8"\xe5\xbe\x80\xe4\xba\x8b\xe5\xa6\x82\xe7\x83\x9f"\xe5\xb0\x81\xe9\x9d\xa2\xe5\x9b\xbe\xef\xbc\x8c\xe4\xbd\xa0\xe4\xb9\x9f\xe6\x9d\xa5\xe8\xaf\x95\xe8\xaf\x95\xe5\x90\xa7\xe3\x80\x82',
+             'Repost',
+             u'\u4e24\u4e2aSiri\u98d9\u4e2d\u6587[\u7b11cry][\u7b11cry]',
+             'Repost',
+             '\xe4\xb8\x80\xe4\xb8\x8d\xe5\xb0\x8f\xe5\xbf\x83\xe5\x8f\x88\xe4\xb8\xad\xe5\xa5\x96\xe4\xba\x86\xef\xbc\x81(\xe2\x89\x96 \xe2\x80\xbf \xe2\x89\x96)\xe2\x9c\xa7\xe6\x88\x91\xe5\x9c\xa8\xe7\x82\xab\xe8\x88\x9e\xe8\x80\x81\xe5\xbc\xa0 \xe7\x9a\x84\xe7\xba\xa2\xe5\x8c\x85\xe4\xb8\xad\xe6\x8a\xbd\xe5\x88\xb0\xe4\xba\x86\xe6\x8f\x90\xe4\xbe\x9b\xe7\x9a\x84\xe2\x80\x9c\xe6\xbb\xb4\xe6\xbb\xb4\xe7\x99\xbe\xe5\x85\x83\xe7\xa4\xbc\xe5\x8c\x85\xe2\x80\x9d\xef\xbc\x8c\xe5\xa5\xbd\xe5\xae\x9e\xe5\x9c\xa8\xe7\x9a\x84\xe7\xa4\xbc\xe7\x89\xa9\xef\xbc\x8c\xe8\xae\xa9\xe5\xae\x9d\xe5\xae\x9d\xe5\xbf\x83\xe6\x83\x85\xe7\xbe\x8e\xe4\xb8\xbd\xe4\xb8\x80\xe6\x95\xb4\xe5\xa4\xa9\xef\xbd\x9e',
+             u'\u8c01\u662f\u6740\u4eba\u51f6\u624b[\u7b11cry]',
+             '',
+             '\xe8\xbf\xbd\xe2\x80\xa6',
+             '\xe3\x80\x90\xe4\xb9\x90\xe9\x98\x9f\xe3\x80\x91\xe7\xac\xac\xe5\x8d\x81\xe4\xb9\x9d\xe5\xb1\x8a\xe5\x8c\x97\xe9\x82\xae\xe6\x91\x87\xe6\xbb\x9a\xe5\xa4\x9c \xe8\x93\x84\xe5\x8a\xbf\xe5\xbe\x85\xe5\x8f\x91\xef\xbc\x81 \xef\xbc\x88\xe5\x88\x86\xe4\xba\xab\xe8\x87\xaa\xef\xbc\x89',
+             '\xe5\x88\xb0\xe4\xb8\x8d\xe5\xa4\xaa\xe5\xa4\x8d\xe6\x9d\x82\xef\xbc\x8c\xe5\x85\xb3\xe9\x94\xae\xe6\x98\xaf\xe5\xbe\x97\xe6\x9c\x89\xe9\x82\xa3\xe4\xbb\xbd\xe5\xbf\x83',
+             '\xe8\x8b\xa5\xe4\xb8\x8d\xe6\x8a\xbd\xe5\x87\xba\xe6\x97\xb6\xe9\x97\xb4\xe6\x9d\xa5\xe5\x88\x9b\xe9\x80\xa0\xe8\x87\xaa\xe5\xb7\xb1\xe6\x83\xb3\xe8\xa6\x81\xe7\x9a\x84\xe7\x94\x9f\xe6\xb4\xbb\xef\xbc\x8c\xe4\xbd\xa0\xe6\x9c\x80\xe7\xbb\x88\xe5\xb0\x86\xe4\xb8\x8d\xe5\xbe\x97\xe4\xb8\x8d\xe8\x8a\xb1\xe8\xb4\xb9\xe5\xa4\xa7\xe9\x87\x8f\xe7\x9a\x84\xe6\x97\xb6\xe9\x97\xb4\xe6\x9d\xa5\xe5\xba\x94\xe4\xbb\x98\xe8\x87\xaa\xe5\xb7\xb1\xe4\xb8\x8d\xe6\x83\xb3\xe8\xa6\x81\xe7\x9a\x84\xe7\x94\x9f\xe6\xb4\xbb\xe3\x80\x82',
+             'Repost',
+             'Repost',
+             'Repost'],
+ 'like_nums': ['1', 0, '2', '1', 0, 0, '1', 0, 0, 0, '1', '5', '1', 0, 0],
+ 'repost_nums': [0, 0, 0, '1', '1', 0, 0, 0, 0, 0, '1', 0, 0, 0, 0],
+ 'time': ['2016-05-17 11:01',
+          '2016-05-03 16:16',
+          '2016-02-21 22:57',
+          '2016-02-08 17:46',
+          '2016-02-06 18:23',
+          '2016-02-01 21:27',
+          '2016-01-21 19:17',
+          '2016-01-21 11:03',
+          '2015-12-24 20:40',
+          '2015-12-23 10:32',
+          '2015-12-23 00:35',
+          '2015-12-22 12:27',
+          '2015-12-22 00:22',
+          '2015-12-18 20:51',
+          '2015-12-09 00:37'],
+ 'timestamp': ['1463454099000',
+               '1462263370000',
+               '1456066660000',
+               '1454924782000',
+               '1454754237000',
+               '1454333249000',
+               '1453375055000',
+               '1453345418000',
+               '1450960820000',
+               '1450837975000',
+               '1450802139000',
+               '1450758421000',
+               '1450714956000',
+               '1450443060000',
+               '1449592672000'],
+ 'uid': '2728266823'}
+2016-05-27 14:46:51 [scrapy] DEBUG: Crawled (200) <GET http://weibo.com/donggebyr?is_ori=1&is_forward=1&is_text=1&is_pic=1&key_word=&start_time=2015-05-01&end_time=2016-05-27&is_search=1&is_searchadv=1&count=15&pagebar=1&_k=&pre_page=2&end_id=&_rnd=&_t=0&max_id=&page=2&uid=2728266823> (referer: http://weibo.com/donggebyr?is_ori=1&is_forward=1&is_text=1&is_pic=1&key_word=&start_time=2015-05-01&end_time=2016-05-27&is_search=1&is_searchadv=1&count=15&pagebar=1&_k=&pre_page=1&end_id=&_rnd=&_t=0&max_id=&page=1&uid=2728266823)
+2016-05-27 14:46:51 [analyzers.weibocontent_analyzer] WARNING: no matched weibo_relative_args!!
+2016-05-27 14:46:51 [scrapy] WARNING: Dropped: Item contains no images
+{'comment_nums': [],
+ 'content': [],
+ 'like_nums': [],
+ 'repost_nums': [],
+ 'time': [],
+ 'timestamp': [],
+ 'uid': '2728266823'}
+2016-05-27 14:47:00 [scrapy] DEBUG: Crawled (200) <GET http://weibo.com/donggebyr?is_ori=1&is_forward=1&is_text=1&is_pic=1&key_word=&start_time=2015-05-01&end_time=2016-05-27&is_search=1&is_searchadv=1&count=15&pagebar=0&_k=&pre_page=2&end_id=&_rnd=&_t=0&max_id=&page=2&uid=2728266823> (referer: http://weibo.com/donggebyr?is_ori=1&is_forward=1&is_text=1&is_pic=1&key_word=&start_time=2015-05-01&end_time=2016-05-27&is_search=1&is_searchadv=1&count=15&pagebar=1&_k=&pre_page=1&end_id=&_rnd=&_t=0&max_id=&page=1&uid=2728266823)
+2016-05-27 14:47:00 [analyzers.weibocontent_analyzer] WARNING: no matched weibo_relative_args!!
+2016-05-27 14:47:00 [scrapy] WARNING: Dropped: Item contains no images
+{'comment_nums': [],
+ 'content': [],
+ 'like_nums': [],
+ 'repost_nums': [],
+ 'time': [],
+ 'timestamp': [],
+ 'uid': '2728266823'}
+2016-05-27 14:47:14 [scrapy] INFO: Crawled 6 pages (at 3 pages/min), scraped 0 items (at 0 items/min)
+2016-05-27 14:47:14 [scrapy] DEBUG: Crawled (200) <GET http://weibo.com/donggebyr?is_ori=1&is_forward=1&is_text=1&is_pic=1&key_word=&start_time=2015-05-01&end_time=2016-05-27&is_search=1&is_searchadv=1&count=15&pagebar=1&_k=&pre_page=1&end_id=&_rnd=&_t=0&max_id=&page=2&uid=2728266823> (referer: http://weibo.com/donggebyr?is_ori=1&is_forward=1&is_text=1&is_pic=1&key_word=&start_time=2015-05-01&end_time=2016-05-27&is_search=1&is_searchadv=1&count=15&pagebar=1&_k=&pre_page=1&end_id=&_rnd=&_t=0&max_id=&page=1&uid=2728266823)
+2016-05-27 14:47:14 [analyzers.weibocontent_analyzer] WARNING: no matched weibo_relative_args!!
+2016-05-27 14:47:14 [scrapy] WARNING: Dropped: Item contains no images
+{'comment_nums': [],
+ 'content': [],
+ 'like_nums': [],
+ 'repost_nums': [],
+ 'time': [],
+ 'timestamp': [],
+ 'uid': '2728266823'}
+2016-05-27 14:47:28 [scrapy] DEBUG: Crawled (200) <GET http://weibo.com/donggebyr?is_ori=1&is_forward=1&is_text=1&is_pic=1&key_word=&start_time=2015-05-01&end_time=2016-05-27&is_search=1&is_searchadv=1&count=15&pagebar=0&_k=&pre_page=1&end_id=&_rnd=&_t=0&max_id=&page=1&uid=2728266823> (referer: http://weibo.com/donggebyr?is_ori=1&is_forward=1&is_text=1&is_pic=1&key_word=&start_time=2015-05-01&end_time=2016-05-27&is_search=1&is_searchadv=1&count=15&pagebar=1&_k=&pre_page=1&end_id=&_rnd=&_t=0&max_id=&page=1&uid=2728266823)
+2016-05-27 14:47:28 [scrapy] WARNING: Dropped: Item contains no images
+{'comment_nums': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+ 'content': ['Repost',
+             '5\xe5\xb9\xb4\xe4\xbb\x8e\xe7\x99\xbe\xe5\xba\xa6\xe5\x89\xaf\xe6\x80\xbb\xe8\xa3\x81\xe5\x8a\xa9\xe7\x90\x86\xe5\x88\xb0\xe4\xba\xa7\xe5\x93\x81\xe7\xbb\x8f\xe7\x90\x86\xef\xbc\x8c\xe5\x86\x8d\xe5\x88\xb0\xe4\xba\xa7\xe5\x93\x81\xe8\xbf\x90\xe8\x90\xa5\xe6\x80\xbb\xe7\x9b\x91 \xef\xbc\x88\xe5\x88\x86\xe4\xba\xab\xe8\x87\xaa\xef\xbc\x89',
+             '\xe3\x80\x8e\xe4\xb8\x80\xe5\x9b\xbe\xe8\xaf\xbb\xe6\x87\x82\xe5\x8d\x81\xe5\x85\xab\xe5\xb1\x8a\xe4\xba\x94\xe4\xb8\xad\xe5\x85\xa8\xe4\xbc\x9a\xe5\x85\xac\xe6\x8a\xa5\xe3\x80\x8f',
+             '\xe6\x88\x91\xe5\x9c\xa8\xe6\x89\xbe\xe5\x88\xb0\xe4\xba\x86\xe4\xb8\x80\xe4\xb8\xaa\xe8\xb6\x85\xe8\xb5\x9e\xe7\x9a\x84\xe6\x96\x87\xe4\xbb\xb6"NLPIR\xe5\xa4\xa7\xe6\x95\xb0\xe6\x8d\xae\xe6\x90\x9c\xe7\xb4\xa2\xe4\xb8\x8e\xe6\x8c\x96\xe6\x8e\x98\xe5\x85\xb1\xe4\xba\xab\xe5\xbc\x80\xe5\x8f\x91\xe5\xb9\xb3\xe5\x8f\xb0.pdf"\xef\xbc\x8c\xe6\x88\x91\xe5\xb7\xb2\xe7\xbb\x8f\xe4\xb8\x8b\xe8\xbd\xbd\xe5\x95\xa6\xef\xbc\x8c\xe4\xbd\xa0\xe4\xb9\x9f\xe7\x9c\x8b\xe7\x9c\x8b\xe5\x90\xa7\xef\xbc\x9f',
+             '\xe6\x88\x91\xe5\x88\x86\xe4\xba\xab\xe4\xba\x86\xe7\x9a\x84\xe6\x96\x87\xe7\xab\xa0',
+             '\xe5\x90\x8c\xe4\xb8\x80\xe4\xb8\xaa\xe5\xb9\xb4\xe7\xba\xa7\xe7\x9a\x84\xef\xbc\x8c\xe5\x93\x8e\xef\xbc\x8c\xe7\x8f\x8d\xe7\x88\xb1\xe7\x94\x9f\xe5\x91\xbd\xe5\x91\x80\xef\xbc\x81',
+             'repost test!!',
+             '\xe5\x93\x88\xe5\x93\x88\xe5\x93\x88\xe5\x93\x88\xe5\x93\x88\xe5\x93\x88',
+             '\xe4\xb8\xa4\xe4\xb8\xaaat\xe6\xb5\x8b\xe8\xaf\x95',
+             '\xe4\xba\x8c\xe6\xac\xa1\xe8\xbd\xac\xe5\x8f\x91\xe6\xb5\x8b\xe8\xaf\x95',
+             '\xe6\x88\x91\xe8\xbd\xac\xe5\x8f\x91\xe4\xbd\xa0\xe6\xb5\x8b\xe8\xaf\x95',
+             '\xe6\x88\x91\xe5\x86\x8dat\xe7\x94\xa8\xe6\x88\xb7\xe6\xb5\x8b\xe8\xaf\x95',
+             '\xe5\x93\x88\xe5\x93\x88\xe5\x93\x88\xe8\xbd\xac\xe5\x8f\x91\xe6\xb5\x8b\xe8\xaf\x95',
+             '\xe5\x93\x88\xe5\x93\x88\xe5\x93\x88',
+             ''],
+ 'like_nums': [0, 0, '1', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+ 'repost_nums': [0, 0, 0, 0, 0, 0, '1', 0, 0, 0, '1', '3', '2', '3', '4'],
+ 'time': ['2015-11-22 00:44',
+          '2015-11-20 08:45',
+          '2015-10-31 02:03',
+          '2015-10-20 17:37',
+          '2015-10-15 10:36',
+          '2015-10-13 15:34',
+          '2015-07-22 22:08',
+          '2015-07-22 21:58',
+          '2015-07-22 14:30',
+          '2015-07-22 10:42',
+          '2015-07-22 10:40',
+          '2015-07-22 10:26',
+          '2015-07-21 16:19',
+          '2015-07-21 16:18',
+          '2015-05-23 00:56'],
+ 'timestamp': ['1448124253000',
+               '1447980312000',
+               '1446228190000',
+               '1445333877000',
+               '1444876611000',
+               '1444721664000',
+               '1437574100000',
+               '1437573482000',
+               '1437546608000',
+               '1437532920000',
+               '1437532802000',
+               '1437532008000',
+               '1437466786000',
+               '1437466722000',
+               '1432313803000'],
+ 'uid': '2728266823'}
+2016-05-27 14:47:41 [scrapy] DEBUG: Crawled (200) <GET http://weibo.com/u/5589322664?is_ori=1&is_forward=1&is_text=1&is_pic=1&key_word=&start_time=2015-05-01&end_time=2016-05-27&is_search=1&is_searchadv=1&count=15&pagebar=0&_k=&pre_page=1&end_id=&_rnd=&_t=0&max_id=&page=1&uid=5589322664> (referer: http://weibo.com/u/5589322664?is_ori=1&is_forward=1&is_text=1&is_pic=1&key_word=&start_time=2015-05-01&end_time=2016-05-27&is_search=1&is_searchadv=1&count=15&pagebar=1&_k=&pre_page=1&end_id=&_rnd=&_t=0&max_id=&page=1&uid=5589322664)
+2016-05-27 14:47:41 [scrapy] WARNING: Dropped: Item contains no images
+{'comment_nums': ['1', '1'],
+ 'content': [u'\u5bf9\u8bf4\uff1a[\u4e92\u7c89][\u4e92\u7c89][\u4e92\u7c89][\u4e92\u7c89]',
+             u'\u5bf9\u8bf4\uff1a\u4e0b\u6b21\u51fa\u53bb\u73a9\uff0c\u7ed9\u5e26\u70b9\u4e1c\u4e1c\u56de\u6765\u554a\uff01[\u793c\u7269]'],
+ 'like_nums': [0, 0],
+ 'repost_nums': [0, 0],
+ 'time': ['2015-08-23 12:11', '2015-08-23 12:10'],
+ 'timestamp': ['1440303092000', '1440303044000'],
+ 'uid': '5589322664'}
+2016-05-27 14:47:51 [scrapy] DEBUG: Crawled (200) <GET http://weibo.com/u/5589322664?is_ori=1&is_forward=1&is_text=1&is_pic=1&key_word=&start_time=2015-05-01&end_time=2016-05-27&is_search=1&is_searchadv=1&count=15&pagebar=1&_k=&pre_page=0&end_id=&_rnd=&_t=0&max_id=&page=1&uid=5589322664> (referer: http://weibo.com/u/5589322664?is_ori=1&is_forward=1&is_text=1&is_pic=1&key_word=&start_time=2015-05-01&end_time=2016-05-27&is_search=1&is_searchadv=1&count=15&pagebar=1&_k=&pre_page=1&end_id=&_rnd=&_t=0&max_id=&page=1&uid=5589322664)
+2016-05-27 14:47:51 [scrapy] WARNING: Dropped: Item contains no images
+{'comment_nums': ['1', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+ 'content': [u'\u9f13\u6d6a\u5c7f\u5750\u8239\u4e2d...[\u9177]',
+             '\xe6\xac\xa2\xe8\xbf\x8e\xe4\xb8\x80\xe8\xb5\xb7\xe5\x8f\x91\xe5\xbe\xae\xe5\x8d\x9a\xef\xbc\x8c\xe5\x8f\x91\xe7\xba\xa2\xe5\x8c\x85\xe4\xb9\x9f\xe8\xa1\x8c\xef\xbc\x8c100\xe4\xb8\x8d\xe5\xab\x8c\xe5\xa4\x9a\xef\xbc\x8c1\xe5\x9d\x97\xe4\xb8\x8d\xe5\xab\x8c\xe5\xb0\x91\xe3\x80\x82',
+             u'\u8fd9\u662f\u8981\u75af\u554a[\u5fae\u7b11][\u5fae\u7b11][\u5fae\u7b11]',
+             u'\u6211\u5bf9\u822a\u73ed\u665a\u70b9\u6ca1\u6709\u4ec0\u4e48\u6982\u5ff5\uff0c\u56e0\u4e3a\u54e5\u4ece\u6765\u4e0d\u5750\u98de\u673a[\u5077\u4e50]\uff0c\u5c31\u662f\u8fd9\u4e48\u4efb\u6027\uff0c\u554a\u54c8\u54c8\u54c8',
+             u'\u8bdd\u8bf4\uff0c\u8fc7\u5e74\u6ca1\u6709\u7ed9\u6211\u53d1\u7ea2\u5305\u7684\u4eba\uff0c\u8bf7\u7ad9\u51fa\u6765\uff0c\u6211\u7ed9\u4ed6\u53d1\uff01[\u793c\u7269][\u5077\u4e50]',
+             '\xe7\xbf\x9f\xe9\x87\x91\xe9\xa1\xba\xe7\x9a\x84\xe4\xba\x8b\xe6\x83\x85\xe8\xbf\x87\xe5\x8e\xbb\xe5\xbe\x88\xe4\xb9\x85\xe4\xba\x86\xef\xbc\x8c\xe7\x8e\xb0\xe5\x9c\xa8\xe6\x83\xb3\xe6\x83\xb3\xef\xbc\x8c\xe6\xb0\x91\xe8\x88\xaa\xe4\xb9\x9f\xe4\xb8\x8d\xe5\xae\xb9\xe6\x98\x93',
+             '\xe5\xaf\xb9\xe8\xaf\xb4\xef\xbc\x9a',
+             u'\u7fdf\u91d1\u987a~~~~[\u56e7]',
+             '\xe9\xa3\x9e\xe6\x9c\xba\xe5\xbe\x88\xe5\xa4\x9a',
+             u'\u5bf9\u8bf4\uff1a[xkl\u8f6c\u5708]\u98de\u673a\u5934\u4e0a\u98d8\uff0c\u5934\u4e0a\u98d8\u98de\u673a\uff0c\u822a\u5927\u98de\u673a\u5929\u5929\u5934\u4e0a\u98d8',
+             u'\u6d4b\u8bd5\u3001\u6d4b\u8bd5\u3001\u518d\u6d4b\u8bd5[[\u56e7]\u3011',
+             u'\u98de\u673a\u4e00\u67b6\u63a5\u7740\u4e00\u67b6\u7684\u5728\u6211\u5934\u9876\u4e0a\u98de\u8fc7[\u6700\u53f3]'],
+ 'like_nums': ['1', 0, '1', 0, 0, '1', 0, 0, 0, 0, 0, 0],
+ 'repost_nums': [0, 0, '1', 0, 0, 0, 0, 0, 0, '1', 0, 0],
+ 'time': ['2016-05-06 17:31',
+          '2016-03-01 21:50',
+          '2016-03-01 21:36',
+          '2016-03-01 21:10',
+          '2016-03-01 20:54',
+          '2016-03-01 20:51',
+          '2016-03-01 19:28',
+          '2015-12-30 09:32',
+          '2015-12-30 09:24',
+          '2015-12-30 09:22',
+          '2015-12-30 09:10',
+          '2015-08-23 12:14'],
+ 'timestamp': ['1462527061000',
+               '1456840211000',
+               '1456839384000',
+               '1456837804000',
+               '1456836876000',
+               '1456836706000',
+               '1456831696000',
+               '1451439165000',
+               '1451438648000',
+               '1451438567000',
+               '1451437823000',
+               '1440303270000'],
+ 'uid': '5589322664'}
+2016-05-27 14:47:59 [scrapy] DEBUG: Crawled (200) <GET http://weibo.com/u/5589322664?is_ori=1&is_forward=1&is_text=1&is_pic=1&key_word=&start_time=2015-05-01&end_time=2016-05-27&is_search=1&is_searchadv=1&count=15&pagebar=1&_k=&pre_page=2&end_id=&_rnd=&_t=0&max_id=&page=2&uid=5589322664> (referer: http://weibo.com/u/5589322664?is_ori=1&is_forward=1&is_text=1&is_pic=1&key_word=&start_time=2015-05-01&end_time=2016-05-27&is_search=1&is_searchadv=1&count=15&pagebar=1&_k=&pre_page=1&end_id=&_rnd=&_t=0&max_id=&page=1&uid=5589322664)
+2016-05-27 14:47:59 [analyzers.weibocontent_analyzer] WARNING: no matched weibo_relative_args!!
+2016-05-27 14:47:59 [scrapy] WARNING: Dropped: Item contains no images
+{'comment_nums': [],
+ 'content': [],
+ 'like_nums': [],
+ 'repost_nums': [],
+ 'time': [],
+ 'timestamp': [],
+ 'uid': '5589322664'}
+2016-05-27 14:48:10 [scrapy] DEBUG: Crawled (200) <GET http://weibo.com/u/5589322664?is_ori=1&is_forward=1&is_text=1&is_pic=1&key_word=&start_time=2015-05-01&end_time=2016-05-27&is_search=1&is_searchadv=1&count=15&pagebar=0&_k=&pre_page=2&end_id=&_rnd=&_t=0&max_id=&page=2&uid=5589322664> (referer: http://weibo.com/u/5589322664?is_ori=1&is_forward=1&is_text=1&is_pic=1&key_word=&start_time=2015-05-01&end_time=2016-05-27&is_search=1&is_searchadv=1&count=15&pagebar=1&_k=&pre_page=1&end_id=&_rnd=&_t=0&max_id=&page=1&uid=5589322664)
+2016-05-27 14:48:10 [analyzers.weibocontent_analyzer] WARNING: no matched weibo_relative_args!!
+2016-05-27 14:48:10 [scrapy] WARNING: Dropped: Item contains no images
+{'comment_nums': [],
+ 'content': [],
+ 'like_nums': [],
+ 'repost_nums': [],
+ 'time': [],
+ 'timestamp': [],
+ 'uid': '5589322664'}
+2016-05-27 14:48:14 [scrapy] INFO: Crawled 12 pages (at 6 pages/min), scraped 0 items (at 0 items/min)
+2016-05-27 14:48:25 [scrapy] DEBUG: Crawled (200) <GET http://weibo.com/u/5589322664?is_ori=1&is_forward=1&is_text=1&is_pic=1&key_word=&start_time=2015-05-01&end_time=2016-05-27&is_search=1&is_searchadv=1&count=15&pagebar=1&_k=&pre_page=1&end_id=&_rnd=&_t=0&max_id=&page=2&uid=5589322664> (referer: http://weibo.com/u/5589322664?is_ori=1&is_forward=1&is_text=1&is_pic=1&key_word=&start_time=2015-05-01&end_time=2016-05-27&is_search=1&is_searchadv=1&count=15&pagebar=1&_k=&pre_page=1&end_id=&_rnd=&_t=0&max_id=&page=1&uid=5589322664)
+2016-05-27 14:48:25 [analyzers.weibocontent_analyzer] WARNING: no matched weibo_relative_args!!
+2016-05-27 14:48:25 [scrapy] WARNING: Dropped: Item contains no images
+{'comment_nums': [],
+ 'content': [],
+ 'like_nums': [],
+ 'repost_nums': [],
+ 'time': [],
+ 'timestamp': [],
+ 'uid': '5589322664'}
+2016-05-27 14:48:25 [scrapy] INFO: Closing spider (finished)
+2016-05-27 14:48:25 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 48662,
+ 'downloader/request_count': 26,
+ 'downloader/request_method_count/GET': 26,
+ 'downloader/response_bytes': 276201,
+ 'downloader/response_count': 26,
+ 'downloader/response_status_count/200': 13,
+ 'downloader/response_status_count/302': 13,
+ 'dupefilter/filtered': 2,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2016, 5, 27, 6, 48, 25, 189114),
+ 'item_dropped_count': 10,
+ 'item_dropped_reasons_count/DropItem': 10,
+ 'log_count/DEBUG': 28,
+ 'log_count/INFO': 21,
+ 'log_count/WARNING': 18,
+ 'request_depth_max': 2,
+ 'response_received_count': 13,
+ 'scheduler/dequeued': 26,
+ 'scheduler/dequeued/memory': 26,
+ 'scheduler/enqueued': 26,
+ 'scheduler/enqueued/memory': 26,
+ 'start_time': datetime.datetime(2016, 5, 27, 6, 43, 14, 718786)}
+2016-05-27 14:48:25 [scrapy] INFO: Spider closed (finished)
