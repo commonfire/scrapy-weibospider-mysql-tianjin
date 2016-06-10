@@ -89,7 +89,7 @@ PROXIES = [
 # Configure a delay for requests for the same website (default: 0)
 # See http://scrapy.readthedocs.org/en/latest/topics/settings.html#download-delay
 # See also autothrottle settings and docs
-DOWNLOAD_DELAY = 10 
+DOWNLOAD_DELAY = 10   #请求间隔基数，单位:秒
 
 RETRY_TIMES = 2
 RETRY_HTTP_CODES = [400,403,408,500,502,503,504] #遇到此Http code时进行重新请求，重新请求次数为RETRY_TIMES参数值

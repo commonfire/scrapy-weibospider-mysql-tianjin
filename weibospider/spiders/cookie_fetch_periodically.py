@@ -35,9 +35,9 @@ class WeiboSpider(CrawlSpider):
             yield Request(url=url,method='get',meta={'cookiejar':CookieJar(),'user':user},callback=self.post_requests)
     
     def close(self):
-        code = write_cookie()
+        code = write_cookie()  #将数据库中的cookie写入到cookielist文件中
         if code:
-            set_flag()
+            set_flag() #flag置1
         else:
             logger.error('Start Fail!')
 
@@ -89,25 +89,21 @@ class WeiboSpider(CrawlSpider):
 
     def save_cookie(self, response):
         '''将cookie存入数据库'''
-        if (response.status == 200):
-            logger.info('Response code:200')
-            cookies = []
-            user = response.meta['user']
-            cookie_jar = response.meta['cookiejar']
-            cookie_jar.extract_cookies(response,response.request)
-            p = re.compile('(S(.*?)) for .weibo.com\/')
+        cookies = []
+        user = response.meta['user']
+        cookie_jar = response.meta['cookiejar']
+        cookie_jar.extract_cookies(response,response.request)
+        p = re.compile('(S(.*?)) for .weibo.com\/')
 
-            for cookie in cookie_jar:
-                if re.search(p,str(cookie)):
-                    cookies.append(re.search(p,str(cookie)).group(1))
+        for cookie in cookie_jar:
+            if re.search(p,str(cookie)):
+                cookies.append(re.search(p,str(cookie)).group(1))
 
-            cookies_jar = (cookie.split('=') for cookie in cookies)
-            cookie_jar_dict = dict(cookies_jar)
-            if cookie_jar_dict:
-                update_cookies(user['username'],cookie_jar_dict)
-            else:
-                logger.info('获取用户'+user['username']+'cookie失败')
+        cookies_jar = (cookie.split('=') for cookie in cookies)
+        cookie_jar_dict = dict(cookies_jar)
+        if cookie_jar_dict:
+            update_cookies(user['username'],cookie_jar_dict)
         else:
-            logger.info('Time out!')
+            logger.info('获取用户'+user['username']+'cookie失败')
 
 

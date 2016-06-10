@@ -88,7 +88,7 @@ class WeiboSpider(CrawlSpider):
         keyword_analyzer = keyword_info_analyzer()
         total_pages = keyword_analyzer.get_totalpages(total_pq)  #需要爬取的搜索结果总页数
         logger.info("the total_pages is: %d",total_pages)
-        for page in range(1):  #TODO 此处更改为total_pages
+        for page in range(total_pages):  #TODO 此处更改为total_pages
             search_url = response.meta['search_url'] + str(page + 1)  #此处添加for循环total_pages
             yield Request(url=search_url,cookies=random.choice(COOKIES),meta={'keyword':response.meta['keyword']},callback=self.parse_keyword_info)
 

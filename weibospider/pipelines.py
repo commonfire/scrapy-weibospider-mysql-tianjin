@@ -86,16 +86,16 @@ class WeibospiderPipeline(object):
 
         if type == 'main': #标记重点人员主用户状态
             status = 2
+
         elif type == 'atuser':  #标记朋友圈@用户状态
             status = 0
             item['userinfo'] = item['atuser_userinfo']
-
             #@用户人员插入预警人员库
             conn.execute('''insert ignore into cauc_warning_man(user_id,user_alias,status) values(%s,%s,%s)''',(str(item['uid']),item['atuser_userinfo']['昵称：'.decode('utf-8')],str(status)))
+
         else: #标记朋友圈转发用户状态
             status = 1
             item['userinfo'] = item['repostuser_userinfo']
-
             #转发用户人员插入预警人员库
             conn.execute('''insert ignore into cauc_warning_man(user_id,user_alias,status) values(%s,%s,%s)''',(str(item['uid']),item['repostuser_userinfo']['昵称：'.decode('utf-8')],str(status)))
 
